@@ -52,21 +52,6 @@ Either way the geometry is a true union of the fixture's own shapes, not a trace
 or an approximation: one closed silhouette per part, with the interior lines that
 make a yoke read as a yoke.
 
-## Regenerating
-
-The library is generated, so it can be rebuilt from scratch:
-
-    .venv/bin/python scripts/gdtf_outline.py        # the 2D-drawing symbols
-    .venv/bin/python scripts/gdtf_3d_outline.py --view plan --tilt 90
-    scripts/package_symbols.py --out <this repo>    # collect them here
-
-Per-fixture tuning lives in `overrides.json` next to the 3D builder - tilt,
-cleanup radii, which parts to trim - so an awkward fixture can be dialled in
-without moving anything else.
-
-Curation is respected at both ends: delete a symbol you do not want and neither
-the builders nor the packager will put it back. `--reset` starts from the full
-set again.
 
 ## Requesting a fixture
 
