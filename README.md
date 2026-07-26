@@ -1,5 +1,7 @@
 # Eos fixture symbols
 
+## Disclaimer: Symbols collected and modified by code written by an LLM.
+
 Magic-sheet symbols for ETC Eos, generated from publicly available manufacturer
 data - GDTF files, DWG and CAD drawings - rather than drawn by hand. Every symbol
 is a real fixture, built from that fixture's own published geometry.
