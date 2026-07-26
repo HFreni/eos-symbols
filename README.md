@@ -52,7 +52,6 @@ Either way the geometry is a true union of the fixture's own shapes, not a trace
 or an approximation: one closed silhouette per part, with the interior lines that
 make a yoke read as a yoke.
 
-
 ## Requesting a fixture
 
 Open an issue using the **Fixture request** template and include:

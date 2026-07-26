@@ -34,7 +34,7 @@ Fixture Type,Symbol Source,Symbol File
 "HF_Mac_Viper_Wash_DX_16B_Extended","GDTF 2D","Martin_Professional_MAC_Viper_Wash_DX"
 "HF_Radiance_Hazer","Drawn","fixture_hazer"
 "Halcyon_Gold_High_Fidelity_Standard_Pan_540","GDTF 3D","High_End_Systems_Halcyon_Gold_High_Fidelity"
-"Halcyon_Gold_Ultra_Bright_Standard_Mech_Pan_630","CAD","halcyon_gold"
+"Halcyon_Gold_Ultra_Bright_Standard_Mech_Pan_630","Drawn","fixture_moving_spot"
 "Impression_FR1_Normal","GDTF 3D","GLP_impression_FR1"
 "Impression_X4_Bar_10_Sgl_Hi_Res_MC","GDTF 3D","GLP_impression_X4_Bar_10"
 "Impression_X4_Bar_20_Dual_Hi_Res_MC","GDTF 3D","GLP_impression_X4_Bar_20"
