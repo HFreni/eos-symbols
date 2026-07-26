@@ -65,6 +65,23 @@ Curation is respected at both ends: delete a symbol you do not want and neither
 the builders nor the packager will put it back. `--reset` starts from the full
 set again.
 
+## Requesting a fixture
+
+Open an issue using the **Fixture request** template and include:
+
+* the manufacturer and the fixture's full name, as it appears on the product
+  page rather than as it is patched (`Robin Forte`, not `Forte HP 16bit`)
+* a link to its [GDTF Share](https://gdtf-share.com) page if you know of one
+
+What decides whether a symbol can be built is not the code, it is whether the
+published data carries geometry. Roughly half the archives on Share are channel
+data only - no `models/svg`, no meshes - and there is nothing to draw from those.
+Manufacturer DWG or CAD is the other route, so a link to one is just as useful.
+
+If a fixture is simply not published anywhere, that is worth an issue too: it is
+the honest answer to "why is my light missing", and it collects the requests in
+one place.
+
 ## Provenance and licensing
 
 Every symbol is generated from publicly available manufacturer data: GDTF files

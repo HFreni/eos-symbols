@@ -1,0 +1,39 @@
+name: Fixture request
+description: Ask for a symbol for a fixture that is not in the library
+title: "[fixture] "
+labels: ["fixture request"]
+body:
+  - type: input
+    id: fixture
+    attributes:
+      label: Manufacturer and fixture
+      description: The full product name, not the patched mode.
+      placeholder: Robe Lighting - Robin Forte
+    validations:
+      required: true
+  - type: input
+    id: gdtf
+    attributes:
+      label: GDTF Share link
+      description: If you know of one. Leave blank if not.
+      placeholder: https://gdtf-share.com/share.php?page=home&manu=...
+  - type: input
+    id: cad
+    attributes:
+      label: Manufacturer DWG / CAD link
+      description: The other route to a symbol, and often the better one.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: >
+        How it should read on a plot - head tipped forward, face-up, a bar seen
+        end-on - and anything unusual about the fixture.
+  - type: markdown
+    attributes:
+      value: >
+        A symbol can only be built if the published data carries geometry.
+        About half the GDTF archives on Share are channel data only, with no
+        2D drawings and no meshes; those cannot be built from, however popular
+        the fixture. If that turns out to be the case here, the issue stays open
+        as a record of it.
