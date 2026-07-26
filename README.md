@@ -1,0 +1,76 @@
+# Eos fixture symbols
+
+Magic-sheet symbols for ETC Eos, generated from publicly available manufacturer
+data - GDTF files, DWG and CAD drawings - rather than drawn by hand. Every symbol
+is a real fixture, built from that fixture's own published geometry.
+
+![showcase](showcase.svg)
+
+## What is in the box
+
+    gdtf/         symbols built from a GDTF's own 2D drawings (models/svg)
+    gdtf3d/       symbols built from a GDTF's 3D meshes, assembled and projected
+    index.html    contact sheet of the whole library
+    showcase.svg  the panel above
+    manifest.csv  every file and the group it belongs to
+
+These are Eos symbols, ready to import - there is no separate color set.
+
+## Using them in Eos
+
+Import them as magic-sheet symbols. They follow the ETC symbol convention:
+
+* `etc_symbol_base0` carries the filled silhouette. Eos tints this, so a symbol
+  reads as a solid fixture and a channel number stays legible on top of it.
+* `etc_symbol_outline` carries the outline, which takes channel color and
+  intensity.
+* There is no backing plate - a direct select or magic sheet frames the symbol
+  already - and no `<text>`, since Eos does not render it.
+
+## How a symbol is drawn
+
+A fixture symbol is the plan view with the head tipped forward, which is how a
+light actually reads on a plot. Wash units are drawn face-up instead, and a few
+ship both, with `_flat` as the face-on variant.
+
+Symbols come from two places, and both are published because neither wins every
+time:
+
+* **gdtf/** uses the 2D drawings a manufacturer ships inside the GDTF. When they
+  are good they are the best thing available, because they are what the
+  manufacturer draws.
+* **gdtf3d/** assembles the 3D meshes instead: each part is projected, the head
+  is rotated on its tilt axis, and the parts are combined in depth order so the
+  head occludes the yoke exactly as it would in life. This is the fallback when a
+  manufacturer's 2D drawing is poor or missing, and for some brands it is the
+  better symbol outright.
+
+Either way the geometry is a true union of the fixture's own shapes, not a trace
+or an approximation: one closed silhouette per part, with the interior lines that
+make a yoke read as a yoke.
+
+## Regenerating
+
+The library is generated, so it can be rebuilt from scratch:
+
+    .venv/bin/python scripts/gdtf_outline.py        # the 2D-drawing symbols
+    .venv/bin/python scripts/gdtf_3d_outline.py --view plan --tilt 90
+    scripts/package_symbols.py --out <this repo>    # collect them here
+
+Per-fixture tuning lives in `overrides.json` next to the 3D builder - tilt,
+cleanup radii, which parts to trim - so an awkward fixture can be dialled in
+without moving anything else.
+
+Curation is respected at both ends: delete a symbol you do not want and neither
+the builders nor the packager will put it back. `--reset` starts from the full
+set again.
+
+## Provenance and licensing
+
+Every symbol is generated from publicly available manufacturer data: GDTF files
+published by manufacturers and the community on
+[GDTF Share](https://gdtf-share.com), and manufacturer DWG and CAD drawings.
+
+The underlying geometry belongs to those vendors. Their terms govern what you may
+do with anything derived from it, so check before redistributing. The generators,
+the drawing conventions and everything else here are original work.
