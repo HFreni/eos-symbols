@@ -30,8 +30,9 @@ Import them as magic-sheet symbols. They follow the ETC symbol convention:
 ## How a symbol is drawn
 
 A fixture symbol is the plan view with the head tipped forward, which is how a
-light actually reads on a plot. Wash units are drawn face-up instead, and a few
-ship both, with `_flat` as the face-on variant.
+light actually reads on a plot. Wash units are drawn face-up instead, since that
+is how they read. A few fixtures ship both: `_flat` is always the alternate of
+whichever way the main symbol faces.
 
 Symbols come from two places, and both are published because neither wins every
 time:
