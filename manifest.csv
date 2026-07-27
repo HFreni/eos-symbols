@@ -1,13 +1,4 @@
 file,group,build
-gdtf/Ayrton_Diablo.svg,gdtf,eos
-gdtf/Ayrton_EagleStrike.svg,gdtf,eos
-gdtf/Ayrton_Rivale_Profile.svg,gdtf,eos
-gdtf/ETC_ColorSource_Spot_Jr.svg,gdtf,eos
-gdtf/ETC_Source_4_WRD.svg,gdtf,eos
-gdtf/GLP_JDC2_IP.svg,gdtf,eos
-gdtf/GLP_impression_X5.svg,gdtf,eos
-gdtf/GLP_impression_X5_Compact.svg,gdtf,eos
-gdtf/GLP_impression_X5_IP_Maxx.svg,gdtf,eos
 gdtf/MAC_One_Basic_Backlight2.svg,gdtf,eos
 gdtf/Mac_Encore_Performance_WRM.svg,gdtf,eos
 gdtf/Mac_Ultra.svg,gdtf,eos
@@ -25,9 +16,6 @@ gdtf/Martin_Professional_MAC_Viper_Performance.svg,gdtf,eos
 gdtf/Martin_Professional_MAC_Viper_Profile.svg,gdtf,eos
 gdtf/Martin_Professional_MAC_Viper_Wash_DX.svg,gdtf,eos
 gdtf/Martin_Professional_MAC_Viper_XIP.svg,gdtf,eos
-gdtf/Robe_Robin_BMFL_Spot.svg,gdtf,eos
-gdtf/Robe_Robin_T2_Profile.svg,gdtf,eos
-gdtf/Robe_Robin_iSpiiderX.svg,gdtf,eos
 gdtf3d/ACME_Hyperzone.svg,gdtf3d,eos
 gdtf3d/ACME_Hyperzone_flat.svg,gdtf3d,eos
 gdtf3d/ACME_Lyra.svg,gdtf3d,eos
@@ -65,6 +53,12 @@ gdtf3d/GLP_impression_X5_IP_Maxx.svg,gdtf3d,eos
 gdtf3d/GLP_impression_X5_IP_Maxx_flat.svg,gdtf3d,eos
 gdtf3d/GLP_impression_X5_flat.svg,gdtf3d,eos
 gdtf3d/High_End_Systems_Halcyon_Gold_High_Fidelity.svg,gdtf3d,eos
+gdtf3d/High_End_Systems_Halcyon_Gold_Ultra-Bright.svg,gdtf3d,eos
+gdtf3d/High_End_Systems_Halcyon_Platinum_High_Fidelity.svg,gdtf3d,eos
+gdtf3d/High_End_Systems_Halcyon_Platinum_Ultra-Bright.svg,gdtf3d,eos
+gdtf3d/High_End_Systems_Halcyon_Silent.svg,gdtf3d,eos
+gdtf3d/High_End_Systems_Halcyon_Titanium_High_Fidelity.svg,gdtf3d,eos
+gdtf3d/High_End_Systems_Halcyon_Titanium_Ultra-Bright.svg,gdtf3d,eos
 gdtf3d/MAC_One_Basic_Backlight2.svg,gdtf3d,eos
 gdtf3d/Mac_Encore_Performance_WRM.svg,gdtf3d,eos
 gdtf3d/Mac_Ultra.svg,gdtf3d,eos
@@ -100,3 +94,4 @@ gdtf3d/Vari-Lite_VL2600_Profile.svg,gdtf3d,eos
 gdtf3d/Vari-Lite_VL3600_Profile_IP.svg,gdtf3d,eos
 gdtf3d/Vari-Lite_VL5LED_Wash.svg,gdtf3d,eos
 gdtf3d/Vari-Lite_VL5_Wash.svg,gdtf3d,eos
+gdtf3d/Vari-Lite_VL5_Wash_alt.svg,gdtf3d,eos
