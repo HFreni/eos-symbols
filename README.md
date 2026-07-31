@@ -22,7 +22,7 @@ These are Eos symbols, ready to import - there is no separate color set.
 
 Import them as magic-sheet symbols. They follow the ETC symbol convention:
 
-* `etc_symbol_base0` carries the filled silhouette. Eos tints this, so a symbol
+* `etc_symbol_base` carries the filled silhouette. Eos tints this, so a symbol
   reads as a solid fixture and a channel number stays legible on top of it.
 * `etc_symbol_outline` carries the outline, which takes channel color and
   intensity.
